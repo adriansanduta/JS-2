@@ -92,4 +92,26 @@ function reverseString(str) {
 }
 console.log(reverseString("This is cool"));
 
-// 9.
+// 9. Turn every element in an array into 0
+// Given an array of elements, return the same length array filled with 0's
+// For loop
+function convertToZeros(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+    newArr[i]  = 0 }
+    return newArr;   
+}
+console.log(convertToZeros([8, 5, 9, 4]));
+
+// Array 'fill'
+function convertToZeros(arr) {
+    return new Array(arr.length).fill(0);
+}
+console.log(convertToZeros([8, 5, 9, 4]));
+
+
+// Array 'map'
+function convertToZeros(arr) {
+    return arr.map(elem => 0);
+}
+console.log(convertToZeros([8, 5, 9, 4]));
