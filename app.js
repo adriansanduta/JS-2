@@ -156,3 +156,11 @@ function filterOutFalsy(arr) {
     return truthyArr;
 }
 console.log(filterOutFalsy(['Tomato', 'Orange', 'Banana', false]));
+
+// 12. Truthy to true, Falsy to false
+// Given an array of truthy and falsy values, return the same array of elements into it's boolean value
+
+function convertToBoolean(arr) {
+   return arr.map(elem => !!elem);
+}
+console.log(convertToBoolean([500, 0, "Andy", "", []]));
