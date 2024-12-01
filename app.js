@@ -35,4 +35,14 @@ return sum;
 }
 console.log(arrSum([1, 5, 8, 9]));
 
-// 5.
+// 5.Add up up the numbers from a single number
+// Given a number, add up all the numbers from one to the number that is given
+
+function progressiveSum(num) {
+    let sum = 0;
+    for (let i = 1; i <= num; ++i); {
+    sum = sum + i;
+}
+return sum;
+}
+console.log(progressiveSum(3));
