@@ -115,3 +115,27 @@ function convertToZeros(arr) {
     return arr.map(elem => 0);
 }
 console.log(convertToZeros([8, 5, 9, 4]));
+
+
+// 10. Filter out all the apples
+// Given an array of fruits, if it is an apple remove it from the array
+
+function removeApples(arr) {
+   return arr.filter(element => element !== 'Apple');
+}
+console.log(removeApples(['Banana', 'Orange', 'Apple']));
+
+// 'For' loop
+function removeApples(arr) {
+    let noApples = []
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] !== 'Apple'){
+            noApples.push(arr[i]);
+        }
+    }
+    return noApples;
+ }
+ console.log(removeApples(['Banana', 'Orange', 'Apple']));
+
+
+ 
