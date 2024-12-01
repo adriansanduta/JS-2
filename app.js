@@ -59,3 +59,18 @@ function calcTime(seconds) {
    return timerMinutes + ':' + timerSeconds;
 }
 console.log(calcTime(50));
+
+// 7.Find the largest number
+// Given an array of numbers, return the largest number of that array
+
+function getMax(arr) {
+    let max = arr[0];
+   for (let i = 0; i < arr.length; ++i) {
+       if (arr[i] > max) {
+        max = arr[i];
+       }
+   }
+   return max;
+}
+console.log(getMax([5, 85, 9, 7]));
+
