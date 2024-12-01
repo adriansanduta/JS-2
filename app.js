@@ -14,3 +14,11 @@ function arrLength(arr) {
 }
 console.log(arrLength([1, 2, 3, 4]));
 
+// 3. Get the last element in an array
+// Given an array, return the last element
+
+function arrLength(arr) {
+    return arr[arr.length -1];
+}
+console.log(arrLength([9, 2, 3, 4]));
+
