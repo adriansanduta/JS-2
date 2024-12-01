@@ -137,5 +137,22 @@ function removeApples(arr) {
  }
  console.log(removeApples(['Banana', 'Orange', 'Apple']));
 
+// 11. Filter out all the falsy values
+// Given an array of values, filter out all the falsy values and only return the truthy values
 
+function filterOutFalsy(arr){
+    return arr.filter(element => !!element === true);
+}
+console.log(filterOutFalsy(['Tomato', 'Orange', 'Banana', false]));
  
+// 'for' loop
+function filterOutFalsy(arr) {
+    let truthyArr = [];
+    for (let i = 0; i < arr.length; ++i) {
+        if (!!arr[i] === true) {
+            truthyArr.push(arr[i]);
+        }
+    }
+    return truthyArr;
+}
+console.log(filterOutFalsy(['Tomato', 'Orange', 'Banana', false]));
