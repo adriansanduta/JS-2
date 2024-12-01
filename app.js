@@ -22,3 +22,17 @@ function arrLength(arr) {
 }
 console.log(arrLength([9, 2, 3, 4]));
 
+// 4. Find the sum of an array
+// Given an array, return the sum of every element
+// for (let i=0; i < arr.length; ++i)
+
+function arrSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; ++i); {
+    sum = sum + arr[i];
+}
+return sum;
+}
+console.log(arrSum([1, 5, 8, 9]));
+
+// 5.
