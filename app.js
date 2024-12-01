@@ -74,3 +74,15 @@ function getMax(arr) {
 }
 console.log(getMax([5, 85, 9, 7]));
 
+// 8.Reverse a string
+// Given a string, return the reversed string
+
+function reverseString(str) {
+    let reversedString = '';
+   for (let i = 0; i < str.length; ++i); {
+    reversedString = str[i] + reversedString;
+   }
+   return reversedString;
+}
+console.log(reverseString("This is cool"));
+
